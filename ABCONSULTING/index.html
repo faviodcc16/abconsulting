@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Consulting | Reclutamiento, Logística y Soluciones Integrales</title>
+    <meta name="description" content="Empresa especializada en reclutamiento y selección de personal, logística, implementación de proyectos y soluciones operativas para todo tipo de negocios.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo -->
+                <a href="#inicio" class="flex items-center gap-3">
+                    <img src="logo.png" alt="Logo AB Consulting" class="h-11 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';">
+                    <div id="logo-fallback" class="w-11 h-11 bg-blue-600 rounded-lg items-center justify-center font-bold text-white text-lg hidden">
+                        AB
+                    </div>
+                    <div>
+                        <p class="text-white font-extrabold text-xl tracking-tight leading-none">AB CONSULTING</p>
+                        <p class="text-slate-400 text-xs tracking-[0.2em] uppercase">Talento y Operaciones</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#inicio" class="hover:text-blue-400 transition-colors">Inicio</a>
+                    <a href="#servicios" class="hover:text-blue-400 transition-colors">Servicios</a>
+                    <a href="#nosotros" class="hover:text-blue-400 transition-colors">Nosotros</a>
+                    <a href="#ventajas" class="hover:text-blue-400 transition-colors">Ventajas</a>
+                    <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-blue-600/20">
+                        Contáctanos
+                    </a>
+                </div>
+
+                <!-- Mobile Button -->
+                <button id="menu-btn" class="md:hidden text-white p-2" aria-label="Abrir menú">
+                    <i data-lucide="menu" class="w-7 h-7"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-white/10 border-b border-white/10">
+            <div class="px-4 py-5 space-y-4">
+                <a href="#inicio" class="block hover:text-blue-400 transition-colors">Inicio</a>
+                <a href="#servicios" class="block hover:text-blue-400 transition-colors">Servicios</a>
+                <a href="#nosotros" class="block hover:text-blue-400 transition-colors">Nosotros</a>
+                <a href="#ventajas" class="block hover:text-blue-400 transition-colors">Ventajas</a>
+                <a href="#contacto" class="block text-blue-400 font-semibold">Contáctanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-24 bg-gradient-hero overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.18),transparent_25%),radial-gradient(circle_at_left,rgba(255,255,255,0.06),transparent_20%)]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <p class="inline-flex items-center gap-2 text-blue-400 font-semibold tracking-[0.2em] uppercase text-sm mb-5">
+                    <span class="w-8 h-px bg-blue-500"></span>
+                    Reclutamiento · Logística · Soluciones
+                </p>
+
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Impulsamos tu operación con
+                    <span class="text-blue-500">talento, rapidez y eficiencia</span>
+                </h1>
+
+                <p class="text-lg md:text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl">
+                    Somos una empresa especializada en reclutamiento y selección de personal, implementación de proyectos, soporte logístico y soluciones operativas para todo tipo de negocio. Adaptamos cada servicio a la necesidad real de nuestros clientes para lograr resultados rápidos, confiables y sostenibles.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#servicios" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all flex items-center justify-center gap-2 shadow-xl shadow-blue-600/20">
+                        Ver servicios
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+
+                    <a href="#contacto" class="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/10 text-white rounded-xl font-bold backdrop-blur-sm transition-all text-center">
+                        Solicitar asesoría
+                    </a>
+                </div>
+
+                <!-- Mini stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+                    <div class="glass-card rounded-2xl p-4 text-center">
+                        <p class="text-2xl font-extrabold text-white">+5</p>
+                        <p class="text-slate-400 text-sm">Años de experiencia</p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-4 text-center">
+                        <p class="text-2xl font-extrabold text-white">Rápida</p>
+                        <p class="text-slate-400 text-sm">Respuesta operativa</p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-4 text-center">
+                        <p class="text-2xl font-extrabold text-white">Amplia</p>
+                        <p class="text-slate-400 text-sm">Base de datos</p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-4 text-center">
+                        <p class="text-2xl font-extrabold text-white">Flexible</p>
+                        <p class="text-slate-400 text-sm">Adaptación al cliente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-950 to-transparent"></div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="servicios" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <p class="text-blue-400 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Nuestros servicios</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Soluciones integrales para tu empresa</h2>
+                <p class="text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                    Brindamos servicios especializados en selección de personal, implementación operativa, logística y soporte en campo, con enfoque en eficiencia, rapidez y resultados concretos.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+                <div class="glass-card p-8 rounded-2xl service-hover transition-all border border-white/5">
+                    <div class="w-14 h-14 bg-blue-600/20 text-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="search" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Reclutamiento y selección</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Identificamos y seleccionamos personal idóneo para todo tipo de negocio, aplicando filtros efectivos para lograr contrataciones exitosas y alineadas con cada puesto.
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl service-hover transition-all border border-white/5">
+                    <div class="w-14 h-14 bg-blue-600/20 text-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="briefcase-business" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cobertura por rubros</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Atendemos requerimientos para transporte, carga, campañas, operaciones, áreas corporativas y otros servicios que nuestros clientes necesiten.
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl service-hover transition-all border border-white/5">
+                    <div class="w-14 h-14 bg-blue-600/20 text-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cuadrillas y rotación de personal</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Formamos equipos de trabajo y gestionamos la rotación de personal para proyectos continuos, campañas temporales o necesidades operativas de alta demanda.
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl service-hover transition-all border border-white/5">
+                    <div class="w-14 h-14 bg-blue-600/20 text-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="truck" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Soporte logístico</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        En el rubro del transporte, ofrecemos implementación de camiones y recursos para operaciones de carga y descarga, asegurando continuidad y eficiencia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="py-16 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-extrabold text-white mb-2">+5</div>
+                    <div class="text-blue-100 font-medium">Años en el rubro</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-extrabold text-white mb-2">100%</div>
+                    <div class="text-blue-100 font-medium">Enfoque personalizado</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-extrabold text-white mb-2">Ágil</div>
+                    <div class="text-blue-100 font-medium">Respuesta operativa</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-extrabold text-white mb-2">Amplia</div>
+                    <div class="text-blue-100 font-medium">Base de datos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="nosotros" class="py-24 bg-slate-900 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+                        <img 
+                            src="reclutamiento.png" 
+                            alt="Equipo profesional en consultoría y reclutamiento" 
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-blue-600 p-6 rounded-2xl shadow-xl hidden md:block">
+                        <p class="text-white text-xl font-bold italic">“Talento correcto, operación eficiente”</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-blue-400 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Sobre nosotros</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Experiencia, rapidez y adaptación a cada necesidad</h2>
+
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Somos una empresa especializada en el reclutamiento y selección de personal para todo tipo de negocios, con más de 5 años de experiencia en el sector y trayectoria trabajando con empresas de alta exigencia operativa.
+                    </p>
+
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Proveemos servicios especializados para transporte, carga, campañas, áreas corporativas y otras posiciones requeridas por nuestros clientes, garantizando procesos eficientes, rápidos y con filtros adecuados para una contratación exitosa.
+                    </p>
+
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        También brindamos implementación de proyectos completos, rotación de personal, conformación de cuadrillas y cobertura operativa según la necesidad de cada empresa, siempre con personal capacitado y costos acordes al mercado.
+                    </p>
+
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Contamos con una amplia base de datos y con soluciones rápidas en campo y a nivel empresarial. Nos adaptamos a los puestos requeridos y, en el rubro del transporte, ofrecemos además soporte con camiones y recursos para carga y descarga.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 bg-blue-600/20 p-1.5 rounded-full text-blue-500">
+                                <i data-lucide="check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Selección efectiva</h4>
+                                <p class="text-slate-400">Perfiles alineados a cada puesto y necesidad operativa.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 bg-blue-600/20 p-1.5 rounded-full text-blue-500">
+                                <i data-lucide="check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Respuesta rápida</h4>
+                                <p class="text-slate-400">Cobertura ágil para campañas, proyectos o rotación de personal.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 bg-blue-600/20 p-1.5 rounded-full text-blue-500">
+                                <i data-lucide="check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Adaptación total</h4>
+                                <p class="text-slate-400">Nos ajustamos al rubro, al cliente y al nivel de exigencia requerido.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="ventajas" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <p class="text-blue-400 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Por qué elegirnos</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Ventajas que marcan la diferencia</h2>
+                <p class="text-slate-400 max-w-3xl mx-auto">
+                    Nuestro compromiso es brindar soluciones prácticas, eficientes y adaptadas a cada cliente, cuidando la calidad del servicio y el resultado final.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <div class="bg-slate-900 border border-white/5 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500 mb-5">
+                        <i data-lucide="database"></i>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-3">Gran base de datos</h3>
+                    <p class="text-slate-400">Contamos con una amplia cartera de candidatos para responder con rapidez a diferentes tipos de vacantes y proyectos.</p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/5 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500 mb-5">
+                        <i data-lucide="clock-3"></i>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-3">Cobertura rápida</h3>
+                    <p class="text-slate-400">Reducimos tiempos de búsqueda y respuesta para que la operación del cliente no se detenga.</p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/5 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500 mb-5">
+                        <i data-lucide="badge-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-3">Precios competitivos</h3>
+                    <p class="text-slate-400">Trabajamos con tarifas acordes al mercado, cuidando la relación entre calidad, rapidez y costo.</p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/5 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500 mb-5">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-3">Personal capacitado</h3>
+                    <p class="text-slate-400">Evaluamos perfiles y priorizamos candidatos preparados para asumir responsabilidades desde el primer día.</p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/5 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500 mb-5">
+                        <i data-lucide="building-2"></i>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-3">Cobertura empresarial y en campo</h3>
+                    <p class="text-slate-400">Atendemos necesidades corporativas, operativas y de implementación en campo según lo que el cliente solicite.</p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/5 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center text-blue-500 mb-5">
+                        <i data-lucide="settings"></i>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-3">Soluciones a medida</h3>
+                    <p class="text-slate-400">No trabajamos con fórmulas rígidas: diseñamos cada propuesta según el requerimiento real del cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contacto" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 md:p-14 flex flex-col lg:flex-row gap-14 overflow-hidden relative border border-white/10">
+                <div class="absolute -top-24 -right-24 w-72 h-72 bg-blue-600/20 blur-[110px]"></div>
+
+                <div class="flex-1 relative z-10">
+                    <p class="text-blue-400 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Contacto</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Listos para apoyar tu operación</h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Si necesitas cubrir vacantes, implementar personal, formar cuadrillas o reforzar tus operaciones logísticas, conversemos. Te ayudaremos a encontrar la solución más adecuada para tu empresa.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-blue-500">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm">Correo</p>
+                                <p class="text-white font-semibold text-lg">ginacorzano84@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-blue-500">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm">Teléfono</p>
+                                <p class="text-white font-semibold text-lg">+51 919 471 346</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-blue-500">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm">Ubicación</p>
+                                <p class="text-white font-semibold text-lg">En todo el Perú</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 relative z-10">
+<form id="contact-form" class="space-y-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <input 
+            type="text" 
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre completo"
+            class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-all text-white placeholder:text-slate-500" 
+            required
+        >
+
+        <input 
+            type="email" 
+            id="correo"
+            name="correo"
+            placeholder="Correo electrónico"
+            class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-all text-white placeholder:text-slate-500" 
+            required
+        >
+    </div>
+
+    <input 
+        type="text" 
+        id="empresa"
+        name="empresa"
+        placeholder="Empresa"
+        class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-all text-white placeholder:text-slate-500"
+    >
+
+    <select 
+        id="servicio"
+        name="servicio"
+        class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-all text-white"
+        required
+    >
+        <option value="">Selecciona un servicio</option>
+        <option value="Reclutamiento y selección">Reclutamiento y selección</option>
+        <option value="Personal para transporte y carga">Personal para transporte y carga</option>
+        <option value="Cuadrillas y rotación de personal">Cuadrillas y rotación de personal</option>
+        <option value="Implementación de proyectos">Implementación de proyectos</option>
+        <option value="Soporte logístico">Soporte logístico</option>
+        <option value="Otro requerimiento">Otro requerimiento</option>
+    </select>
+
+    <textarea 
+        id="mensaje"
+        name="mensaje"
+        rows="5" 
+        placeholder="Cuéntanos qué necesita tu empresa..."
+        class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-all text-white placeholder:text-slate-500 resize-none"
+        required
+    ></textarea>
+
+    <button 
+        type="submit" 
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-600/20"
+    >
+        Enviar solicitud
+    </button>
+</form>
+                        </button>
+
+                        <p id="success-msg" class="hidden text-green-400 text-center font-medium mt-2">
+                            ¡Gracias! Tu mensaje fue enviado correctamente.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 bg-slate-950 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="logo.png" alt="Logo AB Consulting" class="h-9 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('logo-footer-fallback').style.display='flex';">
+                    <div id="logo-footer-fallback" class="w-9 h-9 bg-blue-600 rounded-md items-center justify-center font-bold text-white hidden">
+                        AB
+                    </div>
+                    <span class="text-white font-extrabold tracking-tight">AB CONSULTING</span>
+                </div>
+
+                <p class="text-slate-500 text-sm text-center">
+                    © 2026 AB Consulting. Todos los derechos reservados.
+                </p>
+
+                <div class="flex gap-5">
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors" aria-label="Facebook">
+                        <i data-lucide="facebook"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors" aria-label="instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp button -->
+   <a 
+href="https://wa.me/51919471346?text=Hola,%20quisiera%20información%20sobre%20sus%20servicios%20de%20reclutamiento%20y%20logística." 
+target="_blank" 
+class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 transition-transform hover:scale-105"
+>
+    <i data-lucide="message-circle"></i>
+</a>
+
+    <!-- JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
